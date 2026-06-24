@@ -8,10 +8,8 @@
   :root { color-scheme: light dark; }
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
          line-height: 1.6; max-width: 760px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
-  h1 { font-size: 1.7rem; } h2 { margin-top: 2rem; font-size: 1.25rem; }
+  h1 { font-size: 1.7rem; } h2 { margin-top: 2rem; font-size: 1.25rem; } h3 { margin-top: 1.4rem; font-size: 1.05rem; }
   code { background: rgba(127,127,127,.18); padding: .1em .35em; border-radius: 4px; }
-  .note { background: rgba(255,196,0,.14); border-left: 4px solid #e6a700;
-          padding: .75rem 1rem; border-radius: 6px; margin: 1.25rem 0; font-size: .95rem; }
   .meta { color: #888; font-size: .9rem; }
   hr { border: none; border-top: 1px solid rgba(127,127,127,.3); margin: 3rem 0; }
   a { color: #2b78e4; }
@@ -23,19 +21,48 @@
 <h1>ComfyLink — Privacy Policy</h1>
 <p class="meta">Last updated: 2026-06-24</p>
 
-<p>ComfyLink ("the App", "we", "us") is a mobile companion for the user's own ComfyUI installation. <strong>We do not provide compute or GPU and we do not host an image-generation service</strong> — generation happens on hardware you own and control. This policy explains what data we handle and why.</p>
+<h2>1. Overview</h2>
+<p>ComfyLink ("the App", "we", "us", "our") is a mobile companion for the user's own ComfyUI installation. <strong>We do not provide compute or GPU, and we do not operate an image-generation service</strong> — all generation runs on hardware that you own and control. ComfyLink lets you trigger your workflows, monitor progress, and collect your results on your phone.</p>
+<p>This Privacy Policy explains what personal data we process, why, the legal bases on which we rely, who we share it with, how long we keep it, and the rights available to you. The data controller is <strong>huijiutian</strong>, based in Shanghai, China. You can reach us at <a href="mailto:support@huijiutian.com">support@huijiutian.com</a> for any privacy question or request.</p>
 
-<h2>1. Information we handle</h2>
+<h2>2. Information we process</h2>
+
+<h3>2.1 Information you provide</h3>
 <ul>
-  <li><strong>Account data.</strong> Sign-in is handled by Supabase Auth. We store your email address and a user ID. You can sign in with Sign in with Apple or Google; if you use Apple's "Hide My Email" feature, we receive only the relayed/private address Apple provides.</li>
-  <li><strong>Subscription status.</strong> Your subscription tier (Free / Plus / Pro) is stored in our database. Payments are processed by the Apple App Store or Google Play and managed through RevenueCat. <strong>We never receive or store your full payment-card details.</strong></li>
-  <li><strong>Device pairing.</strong> To connect the App to <em>your own</em> ComfyUI, our relay forwards pairing and job messages between your phone and your ComfyUI. We do not store your workflows on our servers beyond what is needed to relay them.</li>
-  <li><strong>Generated outputs (images).</strong> To deliver results to your phone, outputs are stored <em>temporarily</em> on Cloudflare R2 and are <strong>automatically deleted after approximately 2 days</strong>.</li>
-  <li><strong>Diagnostics.</strong> Basic technical logs may be processed to operate and secure the service.</li>
+  <li><strong>Account data.</strong> When you create an account, sign-in is handled by Supabase Auth and we store your email address and a user identifier. You may sign in with Sign in with Apple or with Google. If you use Apple's "Hide My Email" feature, we receive only the relayed/private address Apple provides.</li>
+  <li><strong>Subscription status.</strong> If you purchase a subscription, we store your subscription tier (Free, Plus, or Pro) in our database. Payments are processed by the Apple App Store or Google Play and managed through RevenueCat. <strong>We do not receive or store your full payment-card details.</strong></li>
+  <li><strong>Support communications.</strong> If you contact us, we process the contents of your message and your contact details to respond.</li>
 </ul>
 
-<h2>2. Third-party processors</h2>
-<p>We rely on the following service providers, who process data on our behalf:</p>
+<h3>2.2 Information collected automatically</h3>
+<ul>
+  <li><strong>Pairing and job messages.</strong> To connect the App to <em>your own</em> ComfyUI, our relay forwards pairing requests and job/progress messages between your phone and your ComfyUI. We do not store your workflows for any purpose beyond relaying them.</li>
+  <li><strong>Generated outputs (images).</strong> To deliver results to your phone, the outputs your ComfyUI produces are stored <em>temporarily</em> and are <strong>automatically deleted after approximately 2 days</strong>.</li>
+  <li><strong>Technical and diagnostic data.</strong> We process basic technical information such as a network (IP) address, device/app version, and event logs to operate, troubleshoot, and secure the service.</li>
+</ul>
+
+<h2>3. How we use information (purposes)</h2>
+<ul>
+  <li>To authenticate you and provide your account.</li>
+  <li>To connect the App to your own ComfyUI and deliver your generated outputs to your device.</li>
+  <li>To provide, manage, and validate your subscription and applicable usage limits.</li>
+  <li>To operate, maintain, troubleshoot, and secure the service, and to prevent abuse or fraud.</li>
+  <li>To respond to your support requests.</li>
+  <li>To comply with legal obligations and enforce our Terms of Service.</li>
+</ul>
+<p>We do <strong>not</strong> use your personal data for targeted or cross-context behavioral advertising, we do <strong>not</strong> sell or "share" your personal data, and we do <strong>not</strong> use third-party advertising SDKs.</p>
+
+<h2>4. Legal bases for processing</h2>
+<p>Where data-protection law (such as the EU/UK GDPR) applies, we rely on the following legal bases:</p>
+<ul>
+  <li><strong>Performance of a contract</strong> — to provide the App, your account, pairing, output delivery, and your subscription.</li>
+  <li><strong>Legitimate interests</strong> — to operate, secure, and improve the service and prevent abuse, balanced against your rights.</li>
+  <li><strong>Consent</strong> — where you have given it (for example, optional communications); you may withdraw consent at any time.</li>
+  <li><strong>Compliance with a legal obligation</strong> — where we are required by law to process or disclose data.</li>
+</ul>
+
+<h2>5. Third-party processors</h2>
+<p>We rely on a limited set of service providers who process personal data on our behalf, under contractual confidentiality and security obligations and only on our instructions:</p>
 <ul>
   <li><strong>Supabase</strong> — authentication and database.</li>
   <li><strong>Cloudflare R2</strong> — temporary storage of generated outputs (~2 days).</li>
@@ -43,51 +70,108 @@
   <li><strong>RevenueCat</strong> — subscription management.</li>
   <li><strong>Apple / Google</strong> — payments and sign-in.</li>
 </ul>
+<p>We may also disclose personal data where reasonably necessary to comply with applicable law, respond to lawful requests from authorities, protect our or others' rights, prevent fraud or security issues, or in connection with a corporate transaction (such as a merger or asset sale), subject to this Policy.</p>
 
-<h2>3. How we use information</h2>
-<p>We use the data above only to operate ComfyLink: to authenticate you, connect you to your own ComfyUI, deliver your outputs, manage your subscription, and keep the service secure. <strong>We do not sell or "share" (as those terms are defined under California law) your personal information, we do not use it for targeted or cross-context behavioral advertising, and we do not use third-party advertising SDKs.</strong></p>
+<h2>6. International data transfers</h2>
+<p>Because of the nature of our service, your personal data may be processed in countries other than the one in which you reside — including, in particular, infrastructure located outside China (primarily in the United States, operated by the processors listed in Section 5), as well as access by our operations and support team based in China. These countries may have data-protection laws that differ from those of your country of residence.</p>
+<p>Where we transfer personal data internationally, we take steps to ensure an appropriate level of protection in accordance with applicable law — for example, by relying on recognized transfer mechanisms such as the European Commission's Standard Contractual Clauses (or equivalent safeguards) where required. You may contact us at <a href="mailto:support@huijiutian.com">support@huijiutian.com</a> for more information about the safeguards we apply.</p>
 
-<h2>4. International data transfers &amp; security</h2>
-<p>ComfyLink is operated from Shanghai, China, while the infrastructure that stores and processes your data is provided by the third-party processors listed above, whose servers are located outside of China (primarily in the United States and other regions). As a result, your information may be transferred to, stored, and processed in countries other than the one in which you live — including the United States and, for operational and support purposes by our team, China. By using the App you consent to these transfers. We rely on our processors' contractual and technical safeguards to protect your data wherever it is processed.</p>
-<p>Data in transit is encrypted with TLS. We apply reasonable technical and organizational measures to protect your information, though no system is perfectly secure.</p>
+<h2>7. Data security</h2>
+<p>We apply reasonable technical and organizational measures designed to protect your personal data, including encryption of data in transit using TLS and access controls that limit who can access data. No method of transmission or storage is completely secure, and we cannot guarantee absolute security.</p>
 
-<h2>5. Data retention</h2>
+<h2>8. Data retention</h2>
 <ul>
-  <li><strong>Generated outputs:</strong> ~2 days, then automatically deleted.</li>
-  <li><strong>Account data:</strong> retained until you delete your account or request deletion.</li>
-  <li><strong>Backups:</strong> retained for a limited period and then rotated out.</li>
+  <li><strong>Generated outputs:</strong> stored only transiently to deliver them to your device, and automatically deleted after approximately 2 days.</li>
+  <li><strong>Account data:</strong> retained for as long as your account is active, and deleted when you delete your account or request deletion (subject to any retention required by law).</li>
+  <li><strong>Backups:</strong> retained for a limited period and then rotated out of our systems.</li>
+  <li><strong>Technical logs:</strong> retained for a limited period for security and troubleshooting.</li>
 </ul>
 
-<h2>6. Your rights</h2>
-<p>You may request access to, or deletion of, your data by emailing us at <a href="mailto:support@huijiutian.com">support@huijiutian.com</a>. You can also delete your account from within the App.</p>
-<p><strong>California residents (CCPA/CPRA).</strong> If you are a California resident, you have the right to: (i) know the categories and specific pieces of personal information we have collected about you in the prior 12 months, along with the sources and purposes; (ii) access and obtain a copy of that information; (iii) request deletion of your personal information; (iv) correct inaccurate personal information; and (v) not be discriminated against for exercising these rights. <strong>We have not sold or "shared" the personal information of California residents in the preceding 12 months, and we do not sell or share the personal information of minors under 16.</strong> To exercise your rights, email <a href="mailto:support@huijiutian.com">support@huijiutian.com</a> with "California Privacy Rights" in the subject line; we will verify your identity before responding.</p>
+<h2>9. Your rights</h2>
+<p>Subject to applicable law, you have the right to:</p>
+<ul>
+  <li><strong>Access</strong> the personal data we hold about you and obtain a copy.</li>
+  <li><strong>Rectify</strong> inaccurate or incomplete personal data.</li>
+  <li><strong>Delete</strong> your personal data (you can also delete your account from within the App).</li>
+  <li><strong>Restrict</strong> or <strong>object to</strong> certain processing.</li>
+  <li><strong>Data portability</strong> — receive your data in a portable, machine-readable format where applicable.</li>
+  <li><strong>Withdraw consent</strong> at any time, where processing is based on consent.</li>
+</ul>
+<p>To exercise any of these rights, email <a href="mailto:support@huijiutian.com">support@huijiutian.com</a>. We may need to verify your identity before acting on a request. If you are in the EEA or UK and believe we have not handled your data lawfully, you also have the right to lodge a complaint with your local data-protection authority.</p>
 
-<h2>7. Children</h2>
-<p>ComfyLink is not directed to children. The App is rated 17+ and intended for adults.</p>
+<h2>10. California privacy rights (CCPA/CPRA)</h2>
+<p>This section applies to California residents and supplements the rest of this Policy. Under the California Consumer Privacy Act, as amended ("CCPA"), you may have the following rights, subject to the conditions and limitations in the CCPA:</p>
+<ul>
+  <li><strong>Right to know</strong> the categories and specific pieces of personal information we have collected about you, the categories of sources, the business or commercial purposes for collecting it, and the categories of third parties to whom we disclose it, in the preceding 12 months.</li>
+  <li><strong>Right to access</strong> a copy of the personal information we have collected about you, in a portable and (where technically feasible) readily usable format.</li>
+  <li><strong>Right to delete</strong> personal information we have collected from you.</li>
+  <li><strong>Right to correct</strong> inaccurate personal information we maintain about you.</li>
+  <li><strong>Right to be free from discrimination</strong> for exercising any of your CCPA rights.</li>
+</ul>
+<p>The categories of personal information we have collected in the preceding 12 months are: <strong>Identifiers</strong> (such as email address, account/user identifier, and IP address); <strong>internet or other electronic network activity information</strong> (such as app interaction and diagnostic logs); and a limited record of the <strong>commercial information</strong> needed to manage your subscription (your subscription tier). We collect this information directly from you and automatically through your use of the App, and we disclose it to the service providers listed in Section 5 for the business purposes described in this Policy.</p>
+<p><strong>We have not sold or "shared" (as those terms are defined under the CCPA) the personal information of California residents in the preceding 12 months.</strong> Because we do not engage in targeted advertising or the sale or sharing of personal information, the related rights to opt out of sale/sharing and of targeted advertising do not apply to our processing; there is nothing to opt out of.</p>
+<p>To exercise your California rights, send an email with "California Privacy Rights" in the subject line to <a href="mailto:support@huijiutian.com">support@huijiutian.com</a>. We must verify your identity before we can act on your request, and you may use an authorized agent where permitted by law.</p>
 
-<h2>8. Changes to this policy</h2>
-<p>We may update this policy from time to time. Material changes will be reflected by updating the "Last updated" date above.</p>
+<h2>11. Other U.S. state privacy rights</h2>
+<p>If you are a resident of a U.S. state with a comprehensive privacy law (such as Colorado, Connecticut, Montana, Oregon, Texas, Utah, Virginia, and others), you may have rights to: confirm whether we process your personal data and to access it; obtain a copy in a portable format; correct inaccuracies; and delete your personal data. You may exercise these rights by emailing <a href="mailto:support@huijiutian.com">support@huijiutian.com</a>; we will verify your identity before acting on a request, and we will not discriminate against you for exercising your rights.</p>
+<p>Some of these laws also provide a right to opt out of the "sale" of personal data and of targeted advertising. Because <strong>we do not sell personal data and do not engage in targeted advertising</strong>, these opt-out rights do not apply to our processing.</p>
 
-<h2>9. Contact</h2>
-<p>Questions about privacy? Email <a href="mailto:support@huijiutian.com">support@huijiutian.com</a>.</p>
+<h2>12. Children</h2>
+<p>ComfyLink is not directed to children. The App is rated 17+ and intended for adults, and we do not knowingly collect personal data from children. If you believe a child has provided us with personal data, please contact us and we will take appropriate steps to delete it.</p>
+
+<h2>13. Changes to this policy</h2>
+<p>We may update this Privacy Policy from time to time. When we make material changes, we will update the "Last updated" date above and, where appropriate, provide additional notice. Your continued use of the App after an update takes effect indicates your awareness of the revised Policy.</p>
+
+<h2>14. Contact</h2>
+<p>For any privacy question or to exercise your rights, contact <strong>huijiutian</strong> at <a href="mailto:support@huijiutian.com">support@huijiutian.com</a>.</p>
 
 <hr>
 
 <h1 lang="zh">ComfyLink — 隐私政策</h1>
 <p class="meta">最后更新:2026-06-24</p>
 
-<p>ComfyLink(下称「本 App」「我方」)是用户「自己的」ComfyUI 的移动伴侣。<strong>我方不提供算力或 GPU,也不托管任何出图服务</strong> —— 生成发生在你自有、自控的硬件上。本政策说明我方处理哪些数据以及原因。</p>
+<h2>1. 概述</h2>
+<p>ComfyLink(下称「本 App」「我方」)是用户「自己的」ComfyUI 的移动伴侣。<strong>我方不提供算力或 GPU,也不运营任何出图服务</strong> —— 所有生成都在你自有、自控的硬件上运行。ComfyLink 让你触发自己的工作流、监控进度、在手机上收取产物。</p>
+<p>本隐私政策说明我方处理哪些个人数据、处理目的、所依据的法律依据、与谁共享、保留多久,以及你享有的权利。数据控制者为 <strong>huijiutian</strong>,位于中国上海。任何隐私问题或请求,可联系 <a href="mailto:support@huijiutian.com">support@huijiutian.com</a>。</p>
 
-<h2>1. 我方处理的信息</h2>
+<h2>2. 我方处理的信息</h2>
+
+<h3>2.1 你提供的信息</h3>
 <ul>
-  <li><strong>账号数据。</strong>登录由 Supabase Auth 处理,我方存储你的邮箱地址与一个用户 ID。你可用「通过 Apple 登录」或 Google 登录;若你使用 Apple 的「隐藏邮箱」,我方仅收到 Apple 提供的中转 / 私有地址。</li>
-  <li><strong>订阅状态。</strong>你的订阅档位(Free / Plus / Pro)存于我方数据库。支付由 Apple App Store 或 Google Play 处理,并通过 RevenueCat 管理。<strong>我方从不接收或存储你的完整支付卡信息。</strong></li>
-  <li><strong>设备配对。</strong>为把 App 连到「你自己的」ComfyUI,我方中继在你的手机与 ComfyUI 之间转发配对与任务消息。除转发所需外,我方不在服务器上存储你的工作流。</li>
-  <li><strong>生成产物(图片)。</strong>为把产物投递到你的手机,产物会<em>临时</em>存储在 Cloudflare R2 上,并在<strong>约 2 天后自动删除</strong>。</li>
-  <li><strong>诊断信息。</strong>为运营与保护服务,可能处理基础技术日志。</li>
+  <li><strong>账号数据。</strong>创建账号时,登录由 Supabase Auth 处理,我方存储你的邮箱地址与一个用户标识。你可用「通过 Apple 登录」或 Google 登录;若你使用 Apple 的「隐藏邮箱」,我方仅收到 Apple 提供的中转 / 私有地址。</li>
+  <li><strong>订阅状态。</strong>若你购买订阅,我方在数据库中存储你的订阅档位(Free、Plus 或 Pro)。支付由 Apple App Store 或 Google Play 处理,并通过 RevenueCat 管理。<strong>我方不接收或存储你的完整支付卡信息。</strong></li>
+  <li><strong>支持沟通。</strong>若你联系我方,我方会处理你的消息内容与联系方式以作回复。</li>
 </ul>
 
-<h2>2. 第三方处理者</h2>
+<h3>2.2 自动收集的信息</h3>
+<ul>
+  <li><strong>配对与任务消息。</strong>为把 App 连到「你自己的」ComfyUI,我方中继在你的手机与 ComfyUI 之间转发配对请求与任务 / 进度消息。除转发所需外,我方不为任何其它目的存储你的工作流。</li>
+  <li><strong>生成产物(图片)。</strong>为把产物投递到你的手机,你的 ComfyUI 产出的产物会被<em>临时</em>存储,并在<strong>约 2 天后自动删除</strong>。</li>
+  <li><strong>技术与诊断数据。</strong>为运营、排障与保护服务,我方处理基础技术信息,如网络(IP)地址、设备 / App 版本和事件日志。</li>
+</ul>
+
+<h2>3. 我方如何使用信息(目的)</h2>
+<ul>
+  <li>为你认证并提供账号。</li>
+  <li>把 App 连到你自己的 ComfyUI,并把你的生成产物投递到你的设备。</li>
+  <li>提供、管理并校验你的订阅与相应使用额度。</li>
+  <li>运营、维护、排障并保护服务,防止滥用或欺诈。</li>
+  <li>回复你的支持请求。</li>
+  <li>遵守法律义务并执行我方服务条款。</li>
+</ul>
+<p>我方<strong>不</strong>将你的个人数据用于定向或跨背景行为广告,<strong>不</strong>出售或「分享」你的个人数据,<strong>也不</strong>使用任何第三方广告 SDK。</p>
+
+<h2>4. 处理的法律依据</h2>
+<p>在适用数据保护法(如欧盟 / 英国 GDPR)的情况下,我方依据以下法律依据处理数据:</p>
+<ul>
+  <li><strong>履行合同</strong> —— 为提供 App、你的账号、配对、产物投递以及订阅。</li>
+  <li><strong>合法权益</strong> —— 为运营、保护与改进服务并防止滥用,并与你的权利相平衡。</li>
+  <li><strong>同意</strong> —— 在你已给予同意之处(如可选的通讯);你可随时撤回同意。</li>
+  <li><strong>遵守法律义务</strong> —— 在法律要求我方处理或披露数据之处。</li>
+</ul>
+
+<h2>5. 第三方处理者</h2>
+<p>我方依赖有限的若干服务商代表我方处理个人数据,他们受合同保密与安全义务约束,且仅按我方指示处理:</p>
 <ul>
   <li><strong>Supabase</strong> —— 认证与数据库。</li>
   <li><strong>Cloudflare R2</strong> —— 生成产物的临时存储(约 2 天)。</li>
@@ -95,33 +179,60 @@
   <li><strong>RevenueCat</strong> —— 订阅管理。</li>
   <li><strong>Apple / Google</strong> —— 支付与登录。</li>
 </ul>
+<p>在合理必要时,我方也可能为遵守适用法律、响应当局合法请求、保护我方或他人权利、防止欺诈或安全问题,或在公司交易(如合并或资产出售)中披露个人数据,并受本政策约束。</p>
 
-<h2>3. 我方如何使用信息</h2>
-<p>我方仅为运营 ComfyLink 使用上述数据:为你认证、把你连到你自己的 ComfyUI、投递产物、管理订阅、保障服务安全。<strong>我方不会「出售」或「分享」(按加州法律定义)你的个人信息,不将其用于定向 / 跨背景行为广告,也不使用任何第三方广告 SDK。</strong></p>
+<h2>6. 跨境数据传输</h2>
+<p>因服务性质所致,你的个人数据可能在你居住地以外的国家处理 —— 尤其包括位于中国境外的基础设施(主要在美国,由第 5 节所列处理者运营),以及我方位于中国的运营与支持团队的访问。这些国家的数据保护法律可能与你居住地的法律不同。</p>
+<p>在跨境传输个人数据时,我方会依适用法律采取措施确保适当的保护水平 —— 例如在必要时依赖经认可的传输机制,如欧盟委员会的标准合同条款(或等效保障)。你可联系 <a href="mailto:support@huijiutian.com">support@huijiutian.com</a> 了解我方所采用保障措施的更多信息。</p>
 
-<h2>4. 跨境数据传输与安全</h2>
-<p>ComfyLink 由位于中国上海的团队运营,而存储与处理你数据的基础设施由上述第三方处理者提供,其服务器位于中国境外(主要在美国及其它地区)。因此,你的信息可能被传输至你所在国以外的国家并在当地存储与处理 —— 包括美国,以及为运营与客服目的由我方团队在中国处理。使用本 App 即表示你同意此类传输。我方依赖处理者的合同与技术保障措施,在数据被处理的任何地点保护你的数据。</p>
-<p>传输中的数据以 TLS 加密。我方采取合理的技术与管理措施保护你的信息,但没有系统是绝对安全的。</p>
+<h2>7. 数据安全</h2>
+<p>我方采取合理的技术与管理措施保护你的个人数据,包括以 TLS 对传输中的数据加密,以及限制可访问数据人员的访问控制。没有任何传输或存储方式是绝对安全的,我方无法保证绝对的安全性。</p>
 
-<h2>5. 数据保留</h2>
+<h2>8. 数据保留</h2>
 <ul>
-  <li><strong>生成产物:</strong>约 2 天,之后自动删除。</li>
-  <li><strong>账号数据:</strong>保留至你删除账号或请求删除。</li>
-  <li><strong>备份:</strong>保留有限期后轮换清除。</li>
+  <li><strong>生成产物:</strong>仅为投递到你的设备而临时存储,约 2 天后自动删除。</li>
+  <li><strong>账号数据:</strong>在你的账号有效期内保留,并在你删除账号或请求删除时删除(受法律要求的任何保留期限制)。</li>
+  <li><strong>备份:</strong>保留有限期后从我方系统轮换清除。</li>
+  <li><strong>技术日志:</strong>为安全与排障保留有限期。</li>
 </ul>
 
-<h2>6. 你的权利</h2>
-<p>你可发邮件至 <a href="mailto:support@huijiutian.com">support@huijiutian.com</a> 请求访问或删除你的数据,也可在 App 内删除账号。</p>
-<p><strong>加州居民(CCPA/CPRA)。</strong>若你是加州居民,你有权:(i) 知悉我方在过去 12 个月收集的个人信息类别与具体内容、来源及用途;(ii) 访问并获取该信息的副本;(iii) 请求删除你的个人信息;(iv) 更正不准确的个人信息;(v) 不因行使上述权利而受歧视性待遇。<strong>在过去 12 个月内,我方未出售或「分享」加州居民的个人信息,也不会出售或分享 16 岁以下未成年人的个人信息。</strong>行使权利请发邮件至 <a href="mailto:support@huijiutian.com">support@huijiutian.com</a>,主题注明「California Privacy Rights」;我方会在响应前验证你的身份。</p>
+<h2>9. 你的权利</h2>
+<p>在适用法律允许的范围内,你有权:</p>
+<ul>
+  <li><strong>访问</strong>我方持有的关于你的个人数据并获取副本。</li>
+  <li><strong>更正</strong>不准确或不完整的个人数据。</li>
+  <li><strong>删除</strong>你的个人数据(你也可在 App 内删除账号)。</li>
+  <li><strong>限制</strong>或<strong>反对</strong>某些处理。</li>
+  <li><strong>数据可携带</strong> —— 在适用情况下以可携带、机器可读的格式获取你的数据。</li>
+  <li><strong>撤回同意</strong> —— 在处理以同意为依据之处,可随时撤回。</li>
+</ul>
+<p>如需行使上述任一权利,请邮件 <a href="mailto:support@huijiutian.com">support@huijiutian.com</a>。在执行请求前,我方可能需要验证你的身份。若你在欧洲经济区或英国并认为我方未合法处理你的数据,你还有权向你当地的数据保护机构投诉。</p>
 
-<h2>7. 儿童</h2>
-<p>ComfyLink 不面向儿童。本 App 分级 17+,面向成年人。</p>
+<h2>10. 加州隐私权(CCPA/CPRA)</h2>
+<p>本节适用于加州居民,并作为本政策其余部分的补充。根据经修订的《加州消费者隐私法》(「CCPA」),在 CCPA 规定的条件与限制下,你可能享有以下权利:</p>
+<ul>
+  <li><strong>知情权</strong> —— 了解过去 12 个月内我方收集的关于你的个人信息的类别与具体项、来源类别、收集的商业目的,以及我方向其披露个人信息的第三方类别。</li>
+  <li><strong>访问权</strong> —— 以可携带且(技术可行时)易用的格式获取我方收集的关于你的个人信息副本。</li>
+  <li><strong>删除权</strong> —— 请求删除我方向你收集的个人信息。</li>
+  <li><strong>更正权</strong> —— 更正我方持有的关于你的不准确个人信息。</li>
+  <li><strong>不受歧视权</strong> —— 不因行使任何 CCPA 权利而受歧视。</li>
+</ul>
+<p>过去 12 个月内我方收集的个人信息类别为:<strong>标识符</strong>(如邮箱地址、账号 / 用户标识、IP 地址);<strong>互联网或其它电子网络活动信息</strong>(如 App 交互与诊断日志);以及为管理你的订阅所需的有限<strong>商业信息</strong>(你的订阅档位)。我方直接从你处以及通过你对 App 的使用自动收集这些信息,并为本政策所述商业目的向第 5 节所列服务商披露。</p>
+<p><strong>过去 12 个月内,我方未出售或「分享」(按 CCPA 定义)加州居民的个人信息。</strong>由于我方不从事定向广告,也不出售或分享个人信息,故相关的「退出出售 / 分享」与「退出定向广告」权利对我方的处理不适用 —— 没有可供退出的事项。</p>
+<p>如需行使你的加州权利,请发送主题为「California Privacy Rights」的邮件至 <a href="mailto:support@huijiutian.com">support@huijiutian.com</a>。在执行请求前我方必须验证你的身份;在法律允许处,你可使用授权代理人。</p>
 
-<h2>8. 政策变更</h2>
-<p>我方可能不时更新本政策,重大变更将通过更新上方「最后更新」日期体现。</p>
+<h2>11. 美国其它州隐私权</h2>
+<p>若你是设有综合性隐私法的美国州(如科罗拉多、康涅狄格、蒙大拿、俄勒冈、得克萨斯、犹他、弗吉尼亚等)的居民,你可能有权:确认我方是否处理你的个人数据并予以访问;以可携带格式获取副本;更正不准确之处;以及删除你的个人数据。你可邮件 <a href="mailto:support@huijiutian.com">support@huijiutian.com</a> 行使这些权利;我方会在执行请求前验证你的身份,且不会因你行使权利而对你歧视。</p>
+<p>其中部分法律还规定了退出个人数据「出售」与退出定向广告的权利。由于<strong>我方不出售个人数据、不从事定向广告</strong>,这些退出权利对我方的处理不适用。</p>
 
-<h2>9. 联系</h2>
-<p>隐私相关问题请邮件 <a href="mailto:support@huijiutian.com">support@huijiutian.com</a>。</p>
+<h2>12. 儿童</h2>
+<p>ComfyLink 不面向儿童。本 App 分级 17+,面向成年人,我方不会在明知的情况下收集儿童的个人数据。若你认为有儿童向我方提供了个人数据,请联系我方,我方将采取适当措施予以删除。</p>
+
+<h2>13. 政策变更</h2>
+<p>我方可能不时更新本隐私政策。发生重大变更时,我方将更新上方「最后更新」日期,并在适当情况下另行通知。更新生效后你继续使用本 App,即表示你已知悉修订后的政策。</p>
+
+<h2>14. 联系</h2>
+<p>任何隐私问题或行使你的权利,请联系 <strong>huijiutian</strong>:<a href="mailto:support@huijiutian.com">support@huijiutian.com</a>。</p>
 
 <footer>© 2026 huijiutian · ComfyLink</footer>
 
